@@ -1,20 +1,19 @@
 import React from "react";
-import { StatusBar } from "react-native";
-import { StyleSheet, Text, View } from "react-native";
+import 'react-native-gesture-handler';
 
-export default function App () {
+
+
+import { NavigationContainer } from '@react-navigation/native';
+
+import Routes from "./src/routes";  
+
+
+export default function App() {
   return (
-    <View style={styles.container}>
-      <Text>React</Text>
-      
-    </View>
+    <NavigationContainer>
+      <Routes />
+    </NavigationContainer>
+
+    
   )
 }
-
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-
-  },
-});
-
